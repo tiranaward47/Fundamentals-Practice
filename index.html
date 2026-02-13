@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starter Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="#">Logo</a>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Hero headline</h1>
+          <p>One clear sentence about what this page is for.</p>
+          <button class="btn">Call to action</button>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <h2>Features</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Card 1</h3>
+              <p>Short description.</p>
+            </article>
+            <article class="card">
+              <h3>Card 2</h3>
+              <p>Short description.</p>
+            </article>
+            <article class="card">
+              <h3>Card 3</h3>
+              <p>Short description.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Your Name</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
